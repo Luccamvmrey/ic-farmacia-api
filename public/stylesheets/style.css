@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+  --backgroud-color: #222831;
+  --on-background-color: #31363F;
+
+  --accent-color: #76ABAE;
+  --on-accent-color: #222831;
+
+  --text-color: #EEEEEE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  background: var(--backgroud-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--on-background-color);
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 32px;
+  padding: 1rem 1.5rem;
+  backdrop-filter: blur(4px);
+  margin-bottom: 32px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+}
